@@ -25,7 +25,7 @@ pipeline{
             }
             }
         }
-        stage("push to dockerhub"){
+        stage("pushing to dockerhub"){
             steps{
                 script{
                     docker_push("djongo-python-notes-app","latest","karan90988")
